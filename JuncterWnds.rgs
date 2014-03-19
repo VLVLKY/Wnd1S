@@ -1,0 +1,15 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {041C5CE6-1DB4-47EE-9869-F55BD027CEF2} = s 'JuncterWnds Class'
+		{
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{E93D0C9B-448F-4000-B0D8-1FBDFF4951A2}'
+			Version = s '1.0'
+		}
+	}
+}

@@ -1,0 +1,23 @@
+HKCR
+{
+	AddIn.Wnd1S.1 = s 'Wnd1S Class'
+	{
+		CLSID = s '{9FD518F1-A5DB-4F36-89C0-CED4494FC5DD}'
+	}
+	AddIn.Wnd1S = s 'Wnd1S Class'
+	{
+		CLSID = s '{9FD518F1-A5DB-4F36-89C0-CED4494FC5DD}'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {9FD518F1-A5DB-4F36-89C0-CED4494FC5DD} = s 'Wnd1S Class'
+		{
+			ProgID = s 'AddIn.Wnd1S.1'
+			VersionIndependentProgID = s 'AddIn.Wnd1S'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'both'
+			}
+		}
+	}
+}

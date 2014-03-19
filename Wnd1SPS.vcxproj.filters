@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{db1069ce-29d0-476a-b154-af80a538c020}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Созданные файлы">
+      <UniqueIdentifier>{5ac8dee7-7738-4ef6-b358-06d70b8ea42b}</UniqueIdentifier>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Wnd1Sps.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Wnd1S_i.c">
+      <Filter>Созданные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Wnd1S_p.c">
+      <Filter>Созданные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="dlldata.c">
+      <Filter>Созданные файлы</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

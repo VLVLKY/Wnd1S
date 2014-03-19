@@ -1,0 +1,15 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {BCD59EE5-307F-4EAB-A0EB-BAB8629A90BC} = s 'JuncterConnection Class'
+		{
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{E93D0C9B-448F-4000-B0D8-1FBDFF4951A2}'
+			Version = s '1.0'
+		}
+	}
+}
